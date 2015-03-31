@@ -1,0 +1,15 @@
+##########################################Sam######################################################
+
+1.It is the 1st version of Scrapy code with BaseSpider Class with no constructor and Object
+2.If u get error python-indentationerror-unindent-does-not-match-any-outer-indentation-level then 
+you are mixing tab and spaces in your code. Use space not tab
+3. How to Run: Here the spider name is craig
+scrapy crawl craig
+
+4. It is a basic script which will go to craiglist Auto site and grab
+	a) Date posted
+	b) Description
+	c) Links
+	d) Price
+
+
