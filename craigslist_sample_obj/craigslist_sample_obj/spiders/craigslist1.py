@@ -19,7 +19,7 @@ class MySpider(BaseSpider):
         for titles in titles:
             item = CraigslistSampleObjItem()
             item["time"] = titles.xpath(".//time/@datetime").extract() #Selector
-            item["title"] = titles.xpath("a/text()").extract() #Selector #Selector
+            item["title"] = titles.xpath(".//span[@class='pl']/a/text()").extract() #Selector #Selector
             item["link"] = titles.xpath(".//span[@class='pl']/a/@href").extract() #Selector
             item["price"] = titles.xpath(".//span[@class='price']/text()").extract() #Selector
             
